@@ -19,14 +19,14 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-		<groupId>org.neo4j.driver</groupId>
-		<artifactId>neo4j-java-driver</artifactId>
-		<version>1.4.4</version>
+      <groupId>org.neo4j.driver</groupId>
+      <artifactId>neo4j-java-driver</artifactId>
+      <version>1.4.4</version>
     </dependency>
-	<dependency>
-	    <groupId>com.tinkerpop.blueprints</groupId>
-	    <artifactId>blueprints-neo4j-graph</artifactId>
-	    <version>2.6.0</version>
-	</dependency>
+    <dependency>
+      <groupId>com.steelbridgelabs.oss</groupId>
+      <artifactId>neo4j-gremlin-bolt</artifactId>
+      <version>0.2.27</version>
+    </dependency>
   </dependencies>
 </project>

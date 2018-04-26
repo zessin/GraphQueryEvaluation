@@ -13,11 +13,12 @@ import java.util.Properties;
  * @author zessin
  */
 public class PropertiesHelper {
-    private static final String PROPERTIES_DIR_NAME    = ".gqe";
-    private static final String PROPERTIES_FILE_NAME   = "application.properties";
-    private static final String PROP_DATABASE_URI      = "database_uri";
-    private static final String PROP_DATABASE_USERNAME = "database_username";
-    private static final String PROP_DATABASE_PASSWORD = "database_password";
+    private static final String PROPERTIES_DIR_NAME     = ".gqe";
+    private static final String PROPERTIES_FILE_NAME    = "application.properties";
+    private static final String PROP_DATABASE_URI       = "database_uri";
+    private static final String PROP_DATABASE_USERNAME  = "database_username";
+    private static final String PROP_DATABASE_PASSWORD  = "database_password";
+    private static final String PROP_NUMBER_OF_VERTICES = "number_of_vertices";
 
     /**
      * Finds the property which represents the database URI
@@ -41,6 +42,14 @@ public class PropertiesHelper {
      */
     public static String getDatabasePassword() {
         return getPropertyValue(PROP_DATABASE_PASSWORD);
+    }
+
+    /**
+     * Finds the property which represents the number of vertices to be added to the graph
+     * @return The value of the property found
+     */
+    public static int getNumberOfVertices() {
+        return Integer.parseInt(getPropertyValue(PROP_NUMBER_OF_VERTICES));
     }
 
     /**
